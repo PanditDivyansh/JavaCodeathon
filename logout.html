@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signed Out</title>
+    <link rel="stylesheet" href="css/addstock.css"> <!-- Reuse the same CSS file -->
+    <style>
+        /* Additional styling for sign-out page animation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full height of the viewport */
+            background-image: url('path_to_your_background_image.jpg'); /* Set the background image */
+            background-size: cover; /* Cover the whole background */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Ensure the background is fixed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signout-container {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8); /* White background with opacity for contrast */
+            border-radius: 12px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .signout-icon {
+            font-size: 6em;
+            color: #dc3545;
+            margin-bottom: 20px;
+            animation: logoutAnimation 1s ease-in-out forwards;
+        }
+
+        .signout-text {
+            font-size: 1.8em;
+            color: #333;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Animation for the sign-out icon */
+        @keyframes logoutAnimation {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Link to go back */
+        .btn-go-back {
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 1.2em;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-go-back:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section class="signout-container">
+        <div class="signout-icon">🔑</div> <!-- Sign Out Icon (Key) -->
+        <div class="signout-text">You have been signed out successfully!</div>
+        <a href="Index.html" class="btn-go-back">Go to Welcome Page</a>
+    </section>
+</body>
+</html>
