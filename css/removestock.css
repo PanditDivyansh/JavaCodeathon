@@ -4,7 +4,7 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background: url('../images/3324.jpg') no-repeat center center/cover;
+    background: url('../images/empdashback1/3324.jpg') no-repeat center center/cover;
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
@@ -70,7 +70,7 @@ body {
     margin-bottom: 40px;
 }
 
-/* Add Stock Form Styles */
+/* Form Styles for Add and Remove Stock Pages */
 .stock-form {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the form */
     padding: 2rem;
@@ -117,7 +117,7 @@ body {
 /* Button container styling */
 .form-actions {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -126,11 +126,11 @@ body {
     display: inline-block;
     background-color: #007BFF;
     color: #fff;
-    padding: 10px;
+    padding: 0.8rem 2rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 18px;
-    width: 50%;
+    width: 180px;
     text-align: center;
     transition: background-color 0.3s, box-shadow 0.3s;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);

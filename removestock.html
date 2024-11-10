@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Stock - StockPro Tracker</title>
+    <link rel="stylesheet" href="css/addstock.css"> <!-- Reuse the same CSS file -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">StockPro Tracker</h1>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="welcome-text">Remove Product</div>
+
+        <form action="remove_stock.php" method="POST" class="stock-form">
+            <div>
+                <label for="product-id">Product ID :</label>
+                <input type="text" id="product-id" name="id" placeholder="Enter Product ID" required>
+            </div>
+            <div class="form-group">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" name="product_name" placeholder="Enter Product Name" required>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn">Remove Stock</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
